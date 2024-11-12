@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Corbel', sans-serif;
+}
+
+.main {
+    width: 90%;
+    max-width: 800px;
+    background: linear-gradient(to bottom, rgba(255, 153, 51, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(19, 136, 8, 1) 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #000; /* Set a dark color for better visibility */
+}
+
+
+
+.left-body, .right-body {
+    width: 100%;
+    padding: 1rem;
+}
+
+.logo {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+h1.logo {
+    font-weight: bold; /* Make header text bold */
+    color: #0056b3; /* Dark blue color for better contrast */
+}
+
+h2.logo {
+font-weight: bold; /* Make header text bold */
+    color: #0056b3; /* Dark blue color for better contrast */
+}
+
+.logo span {
+    color: #00a2ed;
+}
+
+p {
+    color: #0056b3;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+}
+
+.link {
+    margin-top: 1.5rem;
+    color: #0056b3;
+    font-weight: 600;
+}
+
+.link a {
+    border: 2px solid #00a2ed;
+    color: #FFFF00;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    margin: 0.5rem;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    background-color: #FFFF00;
+    color: white;
+}
+
+.right-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+    }
+    .left-body, .right-body {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1.logo {
+        font-size: 2.5rem;
+    }
+    h2.logo {
+        font-size: 1.2rem;
+    }
+    .left-body, .right-body {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

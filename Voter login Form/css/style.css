@@ -1,0 +1,143 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body and background gradient */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #FF9933, #FFFFFF, #138808); /* Tricolor gradient */
+    color: #333;
+}
+
+/* Container for forms */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Form header */
+.form header {
+    font-size: 26px;
+    font-weight: 600;
+    color: #138808;
+    margin-bottom: 20px;
+}
+
+/* Field and input styling */
+.field {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-field .input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    background: #f7f7f7;
+}
+
+.input-field .input:focus {
+    border-color: #138808;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(19, 136, 8, 0.15);
+}
+
+/* Button styling */
+.button-field button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #138808, #0b6a2c);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-field button:hover {
+    background: linear-gradient(135deg, #0b6a2c, #138808);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Link styling */
+a {
+    color: #FF9933;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e68a00;
+}
+
+/* Icon styling */
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.eye-icon:hover {
+    color: #555;
+}
+
+/* Subtle animations */
+.form-content {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container background pulse effect */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    }
+}
+.container {
+    animation: pulse 3s infinite ease-in-out;
+}
